@@ -46,22 +46,32 @@ SwarmDebug/
 ├── public/               # Static assets and images
 └── package.json          # Project dependencies and scripts
 🏃‍♂️ Getting Started Locally
+
+
 Clone the repository:
 
 Bash
 
 
 git clone https://github.com/Manish1678-sos/SwarmDebug.git
+
+
 cd SwarmDebug
+
+
 Install dependencies:
 
 Bash
 
 
 npm install
+
+
 Run the development server:
 
 Bash
+
+
 npm run dev
 Open your browser:
 Navigate to http://localhost:3000 to access the application. (Note: Accessing via localhost ensures seamless WebSocket HMR handshakes).
