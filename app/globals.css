@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+:root { --bg: #071015; --panel: #0b181c; --muted: #6f8983; --copy: #91aaa5; --acid: #c7ff5e; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: #e7f4f1; font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, monospace; }
+a { text-decoration: none; }
+::selection { background: var(--acid); color: var(--bg); }
