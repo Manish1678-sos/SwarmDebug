@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+SWARMDEBUG ⚡
+Autonomous Multi-Agent Debugging Platform
 
-## Getting Started
+SwarmDebug is an advanced, parallel multi-agent software health intelligence platform designed to stress-test codebases, hunt anomalies across logs and runtime states, and generate guardrailed resolutions at swarm speed. Built for the IBM hackathon, it coordinates specialized AI subagents to tackle complex engineering incidents collaboratively.
 
-First, run the development server:
+🚀 Key Features
+Parallel Signal Hunting: Three specialized agents inspect logs, state, and code concurrently to isolate anomalies instantly.
 
-```bash
+Context-Aware Diagnosis: Traces symptoms across repository history, runtime states, and dependency graphs.
+
+Guardrailed Resolution: Automatically proposes explainable patches with confidence scores before any code reaches a protected branch.
+
+Command Center UI: A dark-themed, responsive dashboard featuring real-time incident queues, repository health metrics, and interactive agent workflows.
+
+🛠️ Tech Stack
+Framework: Next.js (App Router)
+
+Styling: Tailwind CSS
+
+Icons: Lucide React
+
+Language: TypeScript
+
+State & Simulation: Custom multi-agent orchestration engine (swarmEngine.ts) with robust mock data simulation (db.ts) for seamless, high-performance demonstrations.
+
+📦 Project Structure
+Plaintext
+SwarmDebug/
+├── app/                  # Next.js App Router pages (Dashboard, Signup, etc.)
+├── components/           # Reusable UI components & interactive carousels
+├── lib/                  # Core simulation engine & mock data utilities
+│   ├── swarmEngine.ts    # Multi-agent state machine and log orchestration
+│   └── db.ts             # Repository statuses and incident queue mock data
+├── public/               # Static assets and images
+└── package.json          # Project dependencies and scripts
+🏃‍♂️ Getting Started Locally
+Clone the repository:
+
+Bash
+git clone https://github.com/Manish1678-sos/SwarmDebug.git
+cd SwarmDebug
+Install dependencies:
+
+Bash
+npm install
+Run the development server:
+
+Bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open your browser:
+Navigate to http://localhost:3000 to access the application. (Note: Accessing via localhost ensures seamless WebSocket HMR handshakes).
